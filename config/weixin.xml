@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+	<weixin>
+		<appid>a</appid>
+		<token>b</token>
+		<secret-key>c</secret-key>
+		<grant-type>client_credential</grant-type>
+		<url>
+			<access-token>https://api.weixin.qq.com/cgi-bin/token</access-token>
+			<menu-create>https://api.weixin.qq.com/cgi-bin/menu/create</menu-create>
+			<menu-get>https://api.weixin.qq.com/cgi-bin/menu/get</menu-get>
+			<menu-delete>https://api.weixin.qq.com/cgi-bin/menu/delete</menu-delete>
+		</url>
+	</weixin>
+	<frame>
+		<msg-handles>
+			<handle class="com.wxframe.weixin.msg.handle.ins.Msg4TextHandle">
+				<listener>com.wxframe.weixin.msg.handle.listener.Msg4TextListener</listener>
+			</handle>
+			<handle class="com.wxframe.weixin.msg.handle.ins.Msg4ImageHandle">
+				<listener>com.wxframe.weixin.msg.handle.listener.Msg4TextListener</listener>
+			</handle>
+		</msg-handles>
+	</frame>
+</ROOT>
